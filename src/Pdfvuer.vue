@@ -100,7 +100,7 @@
         var self = this;
         this.pdf.getPage(val).then(function (pdfPage) {
           self.pdfViewer.setPdfPage(pdfPage);
-          self.pdfViewer.draw();
+        self.drawScaled(self.scale);
         });
       },
       scale: function (val) {
